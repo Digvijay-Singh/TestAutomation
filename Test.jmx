@@ -445,7 +445,7 @@
           <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
           <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
           <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
-          <stringProp name="ChromeDriverConfig.chromedriver_path">C:\apache-jmeter-2.11\extras\chromedriver.exe</stringProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">C:\apache-jmeter-2.11\chromedriver.exe</stringProp>
         </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
         <hashTree/>
         <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
