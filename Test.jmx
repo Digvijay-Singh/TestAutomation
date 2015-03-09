@@ -15,7 +15,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="appurl1" elementType="Argument">
             <stringProp name="Argument.name">appurl1</stringProp>
-            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL7_INT/#/Welcome</stringProp>
+            <stringProp name="Argument.value">www.google.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Welcome URL</stringProp>
           </elementProp>
@@ -194,13 +194,13 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="WelcomeUrl" elementType="Argument">
             <stringProp name="Argument.name">WelcomeUrl</stringProp>
-            <stringProp name="Argument.value">www.google.co.in</stringProp>
+            <stringProp name="Argument.value">www.google.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Welcome URL</stringProp>
           </elementProp>
           <elementProp name="LoginUrl" elementType="Argument">
             <stringProp name="Argument.name">LoginUrl</stringProp>
-            <stringProp name="Argument.value">http://eclipsetv.vf.rogers.com/Rogers/Performance/#/Login</stringProp>
+            <stringProp name="Argument.value">www.yahoo.com</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Login URL</stringProp>
           </elementProp>
@@ -499,7 +499,7 @@ WDS.sampleResult.sampleEnd()&#xd;
           </DurationAssertion>
           <hashTree/>
         </hashTree>
-        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="RTV-411 : Login to  Application" enabled="true">
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="RTV-411 : Login to  Application" enabled="false">
           <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)&#xd;
 var select_ui = JavaImporter(org.openqa.selenium.support.ui.Select)&#xd;
 var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)&#xd;
