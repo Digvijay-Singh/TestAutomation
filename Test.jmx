@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.6" jmeter="2.11 r1554548">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables_Std" enabled="false">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="appurl1" elementType="Argument">
+            <stringProp name="Argument.name">appurl1</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/#/Welcome</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Rogers Welcome URL</stringProp>
+          </elementProp>
+          <elementProp name="appurl2" elementType="Argument">
+            <stringProp name="Argument.name">appurl2</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/#/Login</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Rogers Login URL</stringProp>
+          </elementProp>
+          <elementProp name="Home" elementType="Argument">
+            <stringProp name="Argument.name">Home</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/#/Home</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Rogers Home URl</stringProp>
+          </elementProp>
+          <elementProp name="searchstring" elementType="Argument">
+            <stringProp name="Argument.name">searchstring</stringProp>
+            <stringProp name="Argument.value">Captain</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Search String for RTV-298/299</stringProp>
+          </elementProp>
+          <elementProp name="appurl" elementType="Argument">
+            <stringProp name="Argument.name">appurl</stringProp>
+            <stringProp name="Argument.value">msmw-proxy-ym-vip.rpub.net.rogers.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Server Name for Server Side script.</stringProp>
+          </elementProp>
+          <elementProp name="referrelurl" elementType="Argument">
+            <stringProp name="Argument.name">referrelurl</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Referer URL in Header Manager of Server Side KPIs.</stringProp>
+          </elementProp>
+          <elementProp name="IP" elementType="Argument">
+            <stringProp name="Argument.name">IP</stringProp>
+            <stringProp name="Argument.value">99.228.164.70</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">IP address of the machine to Login</stringProp>
+          </elementProp>
+          <elementProp name="Channellist1" elementType="Argument">
+            <stringProp name="Argument.name">Channellist1</stringProp>
+            <stringProp name="Argument.value">53,117,1,136,140,75,40,103,143,38,76,126,123,51,91,65,102,70,92,63</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Channel List for first EPG call</stringProp>
+          </elementProp>
+          <elementProp name="Channellist2" elementType="Argument">
+            <stringProp name="Argument.name">Channellist2</stringProp>
+            <stringProp name="Argument.value">152,141,109,111,21,133,68,144,2,101,12,78,98,11,128,79,135,114,110,45</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Channel List for Second EPG call</stringProp>
+          </elementProp>
+          <elementProp name="Channellist3" elementType="Argument">
+            <stringProp name="Argument.name">Channellist3</stringProp>
+            <stringProp name="Argument.value">137,19,157,146,28,94,106,122,3,72,108,52,64,9,90,30,43,80,149,61</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Channel List for third EPG call</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin0" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin0</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin first digit (RTV-357)</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin1" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin1</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin second digit (RTV-357)</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin2" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin2</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin Third digit (RTV-357</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin3" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin3</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin fourth digit (RTV-357</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0421-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0421-1</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">App Launch KPI Time (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0423-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0423-1</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">App Login KPI Time (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0094-3" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0094-3</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for Search. (Sec) RTV-299)</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0094-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0094-1</stringProp>
+            <stringProp name="Argument.value">2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for Previous Search. (Sec) RTV-298</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1017-2" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1017-2</stringProp>
+            <stringProp name="Argument.value">5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for LTV Days Navigation (Sec). RTV-1519</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0429-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0429-1</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for Core Menu Navigation-RTV-425 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1024-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1024-1</stringProp>
+            <stringProp name="Argument.value">0.2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV- 1527(Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0428-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0428-1</stringProp>
+            <stringProp name="Argument.value">0.5</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-423 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0061-5" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0061-5</stringProp>
+            <stringProp name="Argument.value">1.7</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV- 354 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0061-7" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0061-7</stringProp>
+            <stringProp name="Argument.value">1.7</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-357 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0430-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0430-1</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV- 428 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0436-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0436-1</stringProp>
+            <stringProp name="Argument.value">0.2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-444 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1020-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1020-1</stringProp>
+            <stringProp name="Argument.value">0.2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-1523 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1022-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1022-1</stringProp>
+            <stringProp name="Argument.value">0.2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for  RTV- 1525 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="Timeout" elementType="Argument">
+            <stringProp name="Argument.name">Timeout</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">UI Page load Time out. (Sec).</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables_Testing" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="WelcomeUrl" elementType="Argument">
+            <stringProp name="Argument.name">WelcomeUrl</stringProp>
+            <stringProp name="Argument.value">http://eclipsetv.vf.rogers.com/Rogers/Performance/#/Welcome</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Rogers Welcome URL</stringProp>
+          </elementProp>
+          <elementProp name="LoginUrl" elementType="Argument">
+            <stringProp name="Argument.name">LoginUrl</stringProp>
+            <stringProp name="Argument.value">http://eclipsetv.vf.rogers.com/Rogers/Performance/#/Login</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Rogers Login URL</stringProp>
+          </elementProp>
+          <elementProp name="Home" elementType="Argument">
+            <stringProp name="Argument.name">Home</stringProp>
+            <stringProp name="Argument.value">http://eclipsetv.vf.rogers.com/Rogers/Performance/#/Home</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Rogers Home URL</stringProp>
+          </elementProp>
+          <elementProp name="searchstring" elementType="Argument">
+            <stringProp name="Argument.name">searchstring</stringProp>
+            <stringProp name="Argument.value">Captain</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Search String for RTV-298/299</stringProp>
+          </elementProp>
+          <elementProp name="appurl" elementType="Argument">
+            <stringProp name="Argument.name">appurl</stringProp>
+            <stringProp name="Argument.value">msmw-proxy-ym-vip.rpub.net.rogers.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Server Name for Server Side script.</stringProp>
+          </elementProp>
+          <elementProp name="referrelurl" elementType="Argument">
+            <stringProp name="Argument.name">referrelurl</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Referer URL in Header Manager of Server Side KPIs.</stringProp>
+          </elementProp>
+          <elementProp name="IP" elementType="Argument">
+            <stringProp name="Argument.name">IP</stringProp>
+            <stringProp name="Argument.value">24.114.255.100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">IP address of the machine to Login</stringProp>
+          </elementProp>
+          <elementProp name="username" elementType="Argument">
+            <stringProp name="Argument.name">username</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Username for login to application</stringProp>
+          </elementProp>
+          <elementProp name="password" elementType="Argument">
+            <stringProp name="Argument.name">password</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Password for login to application</stringProp>
+          </elementProp>
+          <elementProp name="Channellist1" elementType="Argument">
+            <stringProp name="Argument.name">Channellist1</stringProp>
+            <stringProp name="Argument.value">53,117,1,136,140,75,40,103,143,38,76,126,123,51,91,65,102,70,92,63</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Channel List for first EPG call</stringProp>
+          </elementProp>
+          <elementProp name="Channellist2" elementType="Argument">
+            <stringProp name="Argument.name">Channellist2</stringProp>
+            <stringProp name="Argument.value">152,141,109,111,21,133,68,144,2,101,12,78,98,11,128,79,135,114,110,45</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Channel List for Second EPG call</stringProp>
+          </elementProp>
+          <elementProp name="Channellist3" elementType="Argument">
+            <stringProp name="Argument.name">Channellist3</stringProp>
+            <stringProp name="Argument.value">137,19,157,146,28,94,106,122,3,72,108,52,64,9,90,30,43,80,149,61</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Channel List for third EPG call</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin0" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin0</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin first digit (RTV-357)</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin1" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin1</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin second digit (RTV-357)</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin2" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin2</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin Third digit (RTV-357</stringProp>
+          </elementProp>
+          <elementProp name="Purchasepin3" elementType="Argument">
+            <stringProp name="Argument.name">Purchasepin3</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">Purchase pin fourth digit (RTV-357</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0421-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0421-1</stringProp>
+            <stringProp name="Argument.value">50</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI time to display the Login Page(Sec)</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0423-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0423-1</stringProp>
+            <stringProp name="Argument.value">50</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">App Login KPI Time (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0094-3" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0094-3</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for Search. (Sec) RTV-299)</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0094-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0094-1</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for Previous Search. (Sec) RTV-298</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1017-2" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1017-2</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for LTV Days Navigation (Sec). RTV-1519</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0429-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0429-1</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for Core Menu Navigation-RTV-425 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1024-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1024-1</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV- 1527(Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0428-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0428-1</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-423 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0061-5" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0061-5</stringProp>
+            <stringProp name="Argument.value">15</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV- 354 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_VOD-TS-0061-7" elementType="Argument">
+            <stringProp name="Argument.name">KPI_VOD-TS-0061-7</stringProp>
+            <stringProp name="Argument.value">15</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-357 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0430-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0430-1</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV- 428 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_COREUI-TS-0436-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_COREUI-TS-0436-1</stringProp>
+            <stringProp name="Argument.value">20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-444 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1020-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1020-1</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for RTV-1523 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="KPI_LTV-TS-1022-1" elementType="Argument">
+            <stringProp name="Argument.name">KPI_LTV-TS-1022-1</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">KPI Time for  RTV- 1525 (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="Timeout" elementType="Argument">
+            <stringProp name="Argument.name">Timeout</stringProp>
+            <stringProp name="Argument.value">30</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+            <stringProp name="Argument.desc">UI Page load Time out. (Sec).</stringProp>
+          </elementProp>
+          <elementProp name="Profilepin0" elementType="Argument">
+            <stringProp name="Argument.name">Profilepin0</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.desc">Profile Pin first Digit (RTV-237)</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Profilepin1" elementType="Argument">
+            <stringProp name="Argument.name">Profilepin1</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.desc">Profile Pin first Digit (RTV-237)</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Profilepin2" elementType="Argument">
+            <stringProp name="Argument.name">Profilepin2</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.desc">Profile Pin first Digit (RTV-237)</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Profilepin3" elementType="Argument">
+            <stringProp name="Argument.name">Profilepin3</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.desc">Profile Pin first Digit (RTV-237)</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="CLIENT SIDE" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1416483046000</longProp>
+        <longProp name="ThreadGroup.end_time">1416483046000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+          <boolProp name="clearEachIteration">true</boolProp>
+          <boolProp name="useExpires">false</boolProp>
+        </CacheManager>
+        <hashTree/>
+        <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+          <collectionProp name="CookieManager.cookies"/>
+          <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        </CookieManager>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+          <stringProp name="WebDriverConfig.proxy_type">DIRECT</stringProp>
+          <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+          <stringProp name="WebDriverConfig.http_host"></stringProp>
+          <intProp name="WebDriverConfig.http_port">8080</intProp>
+          <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+          <stringProp name="WebDriverConfig.https_host"></stringProp>
+          <intProp name="WebDriverConfig.https_port">8080</intProp>
+          <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+          <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+          <stringProp name="WebDriverConfig.socks_host"></stringProp>
+          <intProp name="WebDriverConfig.socks_port">8080</intProp>
+          <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+          <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+          <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+          <stringProp name="ChromeDriverConfig.chromedriver_path">C:\apache-jmeter-2.11\extras\chromedriver.exe</stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+        <hashTree/>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller" enabled="false">
+          <stringProp name="IfController.condition"></stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree/>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="RTV-401 : Launch Application" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)&#xd;
+var select_ui = JavaImporter(org.openqa.selenium.support.ui.Select)&#xd;
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)&#xd;
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions&#xd;
+var NSE = org.openqa.selenium.NoSuchElementException&#xd;
+var by = org.openqa.selenium.By&#xd;
+var abc = org.openqa.selenium.Keys&#xd;
+var wait=new support_ui.WebDriverWait(WDS.browser,30)&#xd;
+var timeunit = java.util.concurrent.TimeUnit&#xd;
+&#xd;
+//Maximize Browser Window&#xd;
+WDS.browser.manage().window().maximize()&#xd;
+ &#xd;
+//Enable chrome plugins&#xd;
+WDS.browser.get(&apos;chrome://plugins/&apos;)&#xd;
+var plugin = WDS.browser.findElement(pkg.By.id(&apos;npvoBrowserPlugin.dll-always-allowed&apos;))&#xd;
+plugin.click()&#xd;
+&#xd;
+//**********************Start recording time************************//&#xd;
+&#xd;
+//Start the Sample&#xd;
+WDS.sampleResult.sampleStart()&#xd;
+&#xd;
+//Access the Welcome URL&#xd;
+WDS.browser.get(&quot;${WelcomeUrl}&quot;)&#xd;
+&#xd;
+//Access the Login URL&#xd;
+WDS.browser.get(&quot;${LoginUrl}&quot;)&#xd;
+&#xd;
+//Add Page Load timeOut mentioned in KPI TRS&#xd;
+WDS.browser.manage().timeouts().pageLoadTimeout(&quot;${Timeout}&quot;, timeunit.SECONDS);&#xd;
+&#xd;
+//Stop recording Sample&#xd;
+WDS.sampleResult.sampleEnd()&#xd;
+&#xd;
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">30000</stringProp>
+            <stringProp name="Assertion.scope">all</stringProp>
+          </DurationAssertion>
+          <hashTree/>
+        </hashTree>
+        <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="RTV-411 : Login to  Application" enabled="true">
+          <stringProp name="WebDriverSampler.script">var pkg = JavaImporter(org.openqa.selenium)&#xd;
+var select_ui = JavaImporter(org.openqa.selenium.support.ui.Select)&#xd;
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait)&#xd;
+var conditions = org.openqa.selenium.support.ui.ExpectedConditions&#xd;
+var NSE = org.openqa.selenium.NoSuchElementException&#xd;
+var by = org.openqa.selenium.By&#xd;
+var abc = org.openqa.selenium.Keys&#xd;
+var wait=new support_ui.WebDriverWait(WDS.browser,30)&#xd;
+var timeunit = java.util.concurrent.TimeUnit&#xd;
+&#xd;
+//*********Intialization*********//&#xd;
+&#xd;
+//Wait until User ID field is not available&#xd;
+wait.until(conditions.presenceOfElementLocated(pkg.By.xpath(&apos;//*[@id=&quot;login-container&quot;]/div[1]&apos;)))&#xd;
+&#xd;
+//CLick on User ID field&#xd;
+var Welcome = WDS.browser.findElement(pkg.By.xpath(&apos;//*[@id=&quot;login-container&quot;]/div[1]&apos;))&#xd;
+Welcome.click()&#xd;
+&#xd;
+//Wait for IP addr field to be visible&#xd;
+wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;ipAddr&apos;)))&#xd;
+&#xd;
+//Send IP address to log in&#xd;
+var Ipadd = WDS.browser.findElement(pkg.By.id(&apos;ipAddr&apos;))&#xd;
+Ipadd.click()&#xd;
+Ipadd.sendKeys(&quot;${IP}&quot;)&#xd;
+&#xd;
+//Wait until next button loads&#xd;
+wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;submitBtn&apos;)))&#xd;
+&#xd;
+//Click on Submit button&#xd;
+var Submit = WDS.browser.findElement(pkg.By.id(&apos;submitBtn&apos;))&#xd;
+Submit.click()&#xd;
+&#xd;
+//**********************Start recording time************************//&#xd;
+  &#xd;
+//Start Time&#xd;
+WDS.sampleResult.sampleStart()&#xd;
+&#xd;
+//Add KPI time out mentioned in KPI TRS&#xd;
+WDS.browser.manage().timeouts().pageLoadTimeout(&quot;${Timeout}&quot;,timeunit.SECONDS)&#xd;
+&#xd;
+//Wait till home page loads&#xd;
+wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;mixLanding&apos;)))&#xd;
+wait.until(conditions.presenceOfElementLocated(pkg.By.id(&apos;home-recommend0&apos;)))&#xd;
+&#xd;
+//Stop recording Sample&#xd;
+WDS.sampleResult.sampleEnd()&#xd;
+&#xd;
+</stringProp>
+          <stringProp name="WebDriverSampler.parameters"></stringProp>
+        </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+        <hashTree>
+          <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
+            <stringProp name="DurationAssertion.duration">5000</stringProp>
+          </DurationAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\apache-jmeter-2.11\Results\Test.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\Users\sanjay.belorkar\.jenkins\jobs\JM\Test.XML</stringProp>
+        <boolProp name="ResultCollector.success_only_logging">true</boolProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename">C:\apache-jmeter-2.11\Results\Test1.csv</stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <Summariser guiclass="SummariserGui" testclass="Summariser" testname="Generate Summary Results" enabled="true"/>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
