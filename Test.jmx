@@ -194,7 +194,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="WelcomeUrl" elementType="Argument">
             <stringProp name="Argument.name">WelcomeUrl</stringProp>
-            <stringProp name="Argument.value">http://eclipsetv.vf.rogers.com/Rogers/Performance/#/Welcome</stringProp>
+            <stringProp name="Argument.value">www.google.co.in</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Welcome URL</stringProp>
           </elementProp>
