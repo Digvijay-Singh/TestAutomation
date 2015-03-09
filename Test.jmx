@@ -15,19 +15,19 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="appurl1" elementType="Argument">
             <stringProp name="Argument.name">appurl1</stringProp>
-            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/#/Welcome</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL7_INT/#/Welcome</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Welcome URL</stringProp>
           </elementProp>
           <elementProp name="appurl2" elementType="Argument">
             <stringProp name="Argument.name">appurl2</stringProp>
-            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/#/Login</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL7_INT/#/Login</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Login URL</stringProp>
           </elementProp>
           <elementProp name="Home" elementType="Argument">
             <stringProp name="Argument.name">Home</stringProp>
-            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/#/Home</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL7_INT/#/Home</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Rogers Home URl</stringProp>
           </elementProp>
@@ -45,7 +45,7 @@
           </elementProp>
           <elementProp name="referrelurl" elementType="Argument">
             <stringProp name="Argument.name">referrelurl</stringProp>
-            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL6_INT/</stringProp>
+            <stringProp name="Argument.value">http://msmw-proxy-ym-vip.rpub.net.rogers.com/Rogers/REL7_INT/</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
             <stringProp name="Argument.desc">Referer URL in Header Manager of Server Side KPIs.</stringProp>
           </elementProp>
