@@ -654,7 +654,7 @@ WDS.sampleResult.sampleEnd()&#xd;
             <bytes>true</bytes>
           </value>
         </objProp>
-        <stringProp name="filename">C:\apache-jmeter-2.11\Results\Test1.jtl</stringProp>
+        <stringProp name="filename">C:\apache-jmeter-2.11\Results\Test1.csv</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
