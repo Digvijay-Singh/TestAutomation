@@ -6,7 +6,7 @@
 
     <target name="run" depends="compile">
 
-        <java classname="CSVParser">
+        <java classname="com.automation.CSVParser">
             <classpath path="staging"/>
         </java>
     </target>

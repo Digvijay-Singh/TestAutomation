@@ -1,14 +1,17 @@
+package com.automation;
+
 import java.io.*;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 
 public class CSVParser
 {
-    private static final String inputHtmlReport="./report/scriptReport.html";
-    private static final String outputHtmlReport="./report/rogersReport.html";
+    private static final String inputHtmlReport="./src/com/automation/report/extra/scriptReport.html";
+    private static final String outputHtmlReport="./src/com/automation/report/rogersReport.html";
     private static StringBuffer indexContent = new StringBuffer();
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) throws IOException {
 
         FileInputStream fis = null;
         FileOutputStream fos = null;
@@ -75,6 +78,56 @@ public class CSVParser
                 fileReader.close();
             } catch (IOException e) {
                 e.printStackTrace();
+            }
+        }
+        //creating zip file of html reports and images
+        String zipFile = "./src/com/automation/archiveReport/archive.zip";
+
+        String srcDir = "./src/com/automation/report";
+
+        try {
+
+            FileOutputStream outputFileStram = new FileOutputStream(zipFile);
+
+            ZipOutputStream zos = new ZipOutputStream(outputFileStram);
+
+            File srcFile = new File(srcDir);
+
+            addDirToArchive(zos, srcFile);
+
+            // close the ZipOutputStream
+            zos.close();
+
+        }
+        catch (IOException ioe) {
+            System.out.println("Error creating zip file: " + ioe);
+        }
+    }
+
+    private static void addDirToArchive(ZipOutputStream zos, File srcFile) {
+        File[] files = srcFile.listFiles();
+        System.out.println("Adding directory: " + srcFile.getName());
+        for (int i = 0; i < files.length; i++) {
+            // if the file is directory, use recursion
+            if (files[i].isDirectory()) {
+                addDirToArchive(zos, files[i]);
+                continue;
+            }
+            try {
+                System.out.println("file: " + files[i].getName());
+                // create byte buffer
+                byte[] buffer = new byte[1024];
+                FileInputStream fis = new FileInputStream(files[i]);
+                zos.putNextEntry(new ZipEntry(files[i].getName()));
+                int length;
+                while ((length = fis.read(buffer)) > 0) {
+                    zos.write(buffer, 0, length);
+                }
+                zos.closeEntry();
+                // close the InputStream
+                fis.close();
+            } catch (IOException ioe) {
+                System.out.println("IOException :" + ioe);
             }
         }
     }
